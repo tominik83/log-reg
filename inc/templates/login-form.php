@@ -42,7 +42,7 @@
         }
         ?>
     </p>
-    <?php if (is_user_logged_in()): ?>
+    <?php if (is_user_logged_in()) : ?>
         <form action="<?php echo wp_logout_url(home_url()); ?>" method="post" class='logout-form'>
             <button type="submit" name="wp-submit" class="btn animation" style="--i:5; --j:26;">Logout</button>
         </form>
@@ -51,8 +51,7 @@
 
 <div class="form-box register">
     <h2 class="animation" style="--i:17; --j:0;">Sign Up</h2>
-    <form action="<?php echo esc_url(site_url('wp-login.php?action=register', 'login_post')); ?>" method="post"
-        class='reg-form'>
+    <form action="<?php echo esc_url(site_url('wp-login.php?action=register', 'login_post')); ?>" method="post" class='reg-form'>
 
         <div class="input-box animation" style="--i:18; --j:1;">
             <input type="text" name="user_login" id="user_login" required>

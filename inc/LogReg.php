@@ -1,4 +1,7 @@
 <?php
+
+namespace Tominik\LogReg;
+
 class LogReg
 {
     public function __construct()
@@ -10,7 +13,7 @@ class LogReg
 
     public function load_shortcode()
     {
-        include(log_reg_blocks . '/class-shortcode.php');
+        include(__DIR__ . '/blocks/shortcode.php');
     }
 
 

@@ -327,22 +327,3 @@
   background-color: #45a049;
   /* Zamena boje na hover */
 }
-
-@media (max-width: 768px) {
-  .wrapper {
-    position: relative;
-    width: 450px;
-    height: 750px;
-    justify-content: center;
-    background: transparent;
-    border: 2px solid #0ef;
-    box-shadow: 0 0 25px #0ef;
-    overflow: hidden;
-  }
-  .wrapper .form-box {
-    display: none;
-  }
-  .wrapper .input-box {
-    display: none;
-  }
-}
